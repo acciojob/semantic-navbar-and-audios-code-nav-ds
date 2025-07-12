@@ -2,43 +2,60 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Semantic Navbar & Audios</title>
+  <title>Semantic Navbar and Audios</title>
+  <style>
+    nav {
+      background-color: #f2f2f2;
+      padding: 10px;
+    }
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 20px;
+    }
+    nav ul li {
+      display: inline;
+    }
+    nav a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+  </style>
 </head>
 <body>
 
-  <!-- Part 1: Semantic Navigation Bar -->
+  <!-- Semantic Navbar -->
   <nav>
     <ul>
-      <li><a href="https://example.com/home">Home</a></li>
-      <li><a href="https://example.com/about">About</a></li>
-      <li><a href="https://example.com/contact">Contact</a></li>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About Us</a></li>
+      <li><a href="#contact">Contact Us</a></li>
     </ul>
   </nav>
 
-  <!-- Part 2: Audio Section -->
-  <section>
-    <h2>3 random audios</h2>
-    
-    <audio controls>
-      <source src="http://commondatastorage.googleapis.com/codeskulptor-demos/DDR_assets/Kangaroo_MusiQue_-_The_Neverwritten_Role_Playing_Game.mp3" type="audio/mpeg">
-      Your browser does not support the audio element.
-    </audio>
-    
-    <br><br>
-    
-    <audio controls>
-      <source src="http://commondatastorage.googleapis.com/codeskulptor-assets/Epoq-Lepidoptera.ogg" type="audio/ogg">
-      Your browser does not support the audio element.
-    </audio>
-    
-    <br><br>
-    
-    <audio controls>
-      <source src="http://codeskulptor-demos.commondatastorage.googleapis.com/pang/paza-moduless.mp3" type="audio/mpeg">
-      Your browser does not support the audio element.
-    </audio>
-    
-  </section>
+  <!-- Heading above audios -->
+  <h2>3 random audios</h2>
+
+  <!-- Audio Elements -->
+  <audio controls>
+    <source src="http://commondatastorage.googleapis.com/codeskulptor-demos/DDR_assets/Kangaroo_MusiQue_-_The_Neverwritten_Role_Playing_Game.mp3" type="audio/mp3">
+    Your browser does not support the audio element.
+  </audio>
+  <br><br>
+
+  <audio controls>
+    <source src="http://commondatastorage.googleapis.com/codeskulptor-assets/Epoq-Lepidoptera.ogg" type="audio/ogg">
+    Your browser does not support the audio element.
+  </audio>
+  <br><br>
+
+  <audio controls>
+    <source src="http://codeskulptor-demos.commondatastorage.googleapis.com/pang/paza-moduless.mp3" type="audio/mp3">
+    Your browser does not support the audio element.
+  </audio>
 
 </body>
 </html>
